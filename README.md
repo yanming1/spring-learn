@@ -14,3 +14,20 @@ https://docs.spring.io/spring/docs/current/spring-framework-reference/data-acces
 ```
 TransactionDefinition
 定义了事务的传播性、隔离性、超时时间和只读属性
+```
+  public interface TransactionStatus extends SavepointManager {
+
+      boolean isNewTransaction();
+
+      boolean hasSavepoint();
+
+      void setRollbackOnly();
+
+      boolean isRollbackOnly();
+
+      void flush();
+
+      boolean isCompleted();
+
+  }
+```
