@@ -12,3 +12,5 @@ https://docs.spring.io/spring/docs/current/spring-framework-reference/data-acces
     	void rollback(TransactionStatus status) throws TransactionException;
  }
 ```
+TransactionDefinition
+定义了事务的传播性、隔离性、超时时间和只读属性
